@@ -1,0 +1,348 @@
+@charset "utf-8";
+html{
+    font-size:62.5%; /* 16px × 62.5% = 10px */   
+}
+
+body{
+    margin:0;
+    font-size: 1.4rem;
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "Meiryo",
+    sans-serif;
+    line-height: 1.5;
+    height: 100vh;    
+    background-color: #383676;
+}
+
+::placeholder{
+    color: #cccccc;
+}
+
+
+.name-area{
+    text-align: center;
+}
+
+.name-area-text p{
+    color: white;
+
+}
+
+.button-area{
+    display: flex;
+    margin-top:30px;
+    padding-bottom: 120px;
+}
+
+
+.button{
+        appearance: none;
+        -webkit-appearance:none;
+        -moz-appearance: none ;
+        box-sizing: border-box;
+        display: block;
+        font-size: 2rem;
+        border-radius: 5px;
+        margin: auto;
+        border:none;
+        cursor: pointer;
+        text-align: center;
+        position: relative;
+    
+    }
+    
+    .button a{
+        font-weight: bold;
+        text-decoration-line: none;
+        width:200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        -webkit- transform: translateY(-50%) translateX(-50%);
+    }
+    
+    .button:hover{
+        opacity: 0.8;
+    }
+
+    #game-start-button {
+        background-color: #2d83f6;
+        color: #fff;
+        height: 70px; 
+        width: 300px;
+        padding: 10px 20px; 
+    }
+
+#game-start{
+    margin-bottom:10px;
+}
+
+#start-button>a{
+    color: #fff;
+}
+
+#replay-button{
+    background-color: #2d83f6;
+    color: #fff;
+}
+
+.operation-button{
+    display: flex;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #262D59;
+}
+
+h1{
+    font-size: 1.8rem;
+    color:#F1F1F1;
+}
+
+.title{
+    background-color: #262D59;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    width: 100%;
+    position:fixed;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+    margin-bottom: 5px;
+ }
+
+ .wrapper{
+    position: relative;
+}
+
+.title img{
+    width: 250px;
+    /* padding: 5px 0px; */
+ }
+
+
+/* ------------------
+index.html固有
+------------------ */
+.start-button{
+    background-color: #2d83f6;
+    color: #fff;
+    height: 70px; 
+    width: 300px;
+    padding: 10px 20px; 
+    
+}
+
+
+.index-message{
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+}
+
+.index-img{
+    padding-top:80px;
+    text-align: center;
+}
+
+.index-img img{
+    width: 50% ;
+    text-align: center;
+}
+
+/* ------------------
+outputエリア
+------------------ */
+
+#output{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* ------------------
+イントロおねえさんエリア
+------------------ */
+
+ .bot-area{
+    margin-top: 65px;
+    display: flex;
+ }
+
+.bot-img img{
+    width: 70px;
+}
+
+.bot-name{
+    padding: 0 15px 0 ;
+}
+
+.bot-name span{
+    font-size: 1rem;
+    color: #58ECD6;
+}
+
+.bot-text{
+    background: linear-gradient(to bottom right, #24688D, #3D3179);
+    color:#F1F1F1;
+    padding: 0 15px ;
+    margin: 0 10px;
+    border-radius: 20px;
+    position: relative;
+    display: inline-block;
+    width: 75%;
+    margin-bottom: 15px;
+}
+
+.bot-text::before {
+    content: "";
+    /* borderで三角形を作る */
+    border-width: 10px;
+    border-style: solid;
+    border-color: #24688D transparent transparent transparent;
+    /* 配置する */
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    transform: translateX(-50%);
+    text-align-last: left;
+  }
+
+/* ------------------
+ユーザ入力内容の出力エリア
+------------------ */
+
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user-text{
+    background-color: #58ECD6;
+    color:#000;
+    padding: 0 15px;
+    margin: 0 10px;
+    margin-bottom:10px;
+    border-radius: 20px;
+    position: relative;
+    display: inline-block;
+    text-align: right;
+    margin-right: 0;
+
+}
+
+.user-text::before {
+    content: "";
+    /* borderで三角形を作る */
+    border-width: 10px;
+    border-style: solid;
+    border-color: #58ECD6 transparent transparent transparent;
+    /* 配置する */
+    position: absolute;
+    top: 10%;
+    left: 100%;
+    transform: translateX(-50%);
+    margin-right: 0;
+
+  }
+
+.user-name{
+    font-size: 1rem;
+    color: white;
+    display: block;
+}
+
+
+.msg{
+    
+}
+
+#conversation-area{
+    overflow: scroll; 
+    padding-bottom:150px;
+    padding-top:10px;
+    display: flex;
+}
+
+/* ------------------
+入力エリア
+------------------ */
+
+#info-area{
+    display: flex;
+    justify-content: space-around;
+}
+
+#name-area #input-area{
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#name-area p{
+    color:white;
+    margin-left: 20px;
+}
+
+#point-area p{
+    color:white;
+    margin-left: 20px;
+}
+
+.info{
+    background-color: #262D59;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    width: 100%;
+    position:fixed;
+    bottom:0;
+    z-index: 1000;
+    margin-bottom: 5px;
+}
+
+#input-area{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#text{
+    margin-left:20px;
+}
+
+#operation-button{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.input-button{
+
+}
+
+#send{
+    background-color: #58ECD6;;
+}
+
+@media screen and (min-width: 640px){
+    .wrapper{
+        max-width : 350px;
+        margin:0 auto;
+    }
+    .info{
+        max-width : 350px;
+        margin:0 auto;
+    }
+
+
+    #conversation-area{
+        max-width : 350px;
+        margin:0 auto;
+    }
+
+}
